@@ -6,19 +6,20 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace rp_ims.Pages
+namespace rp_ims.Pages.Invoices
 {
-    public class PrivacyModel : PageModel
+    public class EditModel : PageModel
     {
-        private readonly ILogger<PrivacyModel> _logger;
+        private readonly ILogger<IndexModel> _logger;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger)
+        public EditModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
         }
 
         public void OnGet()
         {
+
         }
     }
 }

@@ -1,0 +1,53 @@
+@page
+@model rp_ims.Pages.Invoices.IndexModel
+@{
+    ViewData["Title"] = "Rechnungen";
+}
+
+<h1 class="display-4">Rechnungen</h1>
+
+<div class="d-flex justify-content-end my-3">
+    <button class="btn btn-primary">Rechnung erstellen</button>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Neueste Rechnungen
+    </div>
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Ersteller</th>
+        <th scope="col">Zusammenfassung</th>
+        <th scope="col">Aktionen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3</th>
+            <td>Slick</td>
+            <td>(Entwurf) 2 Posten, 50 $</td>
+            <td>
+                <a class="btn btn-sm btn-outline-secondary" asp-page="Edit", asp-route-id="3">Ansehen</a>
+            </td>
+        </tr>
+        <tr>
+            <td>2</th>
+            <td>Hanna</td>
+            <td>1x Cola, 5 $</td>
+            <td>
+                <a class="btn btn-sm btn-outline-secondary" asp-page="Edit", asp-route-id="2">Ansehen</a>
+            </td>
+        </tr>
+        <tr>
+            <td>1</th>
+            <td>Slick</td>
+            <td>2 Posten, 50 $</td>
+            <td>
+                <a class="btn btn-sm btn-outline-secondary" asp-page="Edit", asp-route-id="1">Ansehen</a>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
